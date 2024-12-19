@@ -38,9 +38,9 @@ Langkah 5: Masukkan Domain dan Email
 Script akan meminta Anda untuk memasukkan domain dan email. Pastikan domain yang Anda masukkan sudah diarahkan ke server VPS Anda.
 
 Masukkan domain Anda:
-promo.jasahoster.com
+domain anda
 Masukkan email Anda (untuk pemulihan dan pemberitahuan):
-info@galih.us
+email anda
 
 Langkah 6: Proses Instalasi SSL
 
