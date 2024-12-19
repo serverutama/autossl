@@ -25,8 +25,8 @@ cp $SSL_DIR/fullchain.pem $OPENLITESPEED_DIR/ssl/$DOMAIN.crt
 cp $SSL_DIR/privkey.pem $OPENLITESPEED_DIR/ssl/$DOMAIN.key
 
 # Memberikan hak akses yang benar
-chown lsadm:lsadm $OPENLITESPEED_DIR/ssl/$DOMAIN.crt
-chown lsadm:lsadm $OPENLITESPEED_DIR/ssl/$DOMAIN.key
+chown nobody:nobody $OPENLITESPEED_DIR/ssl/$DOMAIN.crt
+chown nobody:nobody $OPENLITESPEED_DIR/ssl/$DOMAIN.key
 chmod 600 $OPENLITESPEED_DIR/ssl/$DOMAIN.key
 
 # Mengonfigurasi OpenLiteSpeed untuk menggunakan SSL
