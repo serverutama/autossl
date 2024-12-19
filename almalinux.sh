@@ -18,6 +18,9 @@ certbot certonly --standalone -d $DOMAIN -m $EMAIL --agree-tos --non-interactive
 OPENLITESPEED_DIR="/usr/local/lsws"
 SSL_DIR="/etc/letsencrypt/live/$DOMAIN"
 
+# Pastikan direktori ssl ada
+mkdir -p $OPENLITESPEED_DIR/ssl
+
 cp $SSL_DIR/fullchain.pem $OPENLITESPEED_DIR/ssl/$DOMAIN.crt
 cp $SSL_DIR/privkey.pem $OPENLITESPEED_DIR/ssl/$DOMAIN.key
 
